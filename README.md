@@ -5,6 +5,7 @@ CouchRest::Paperclip - Making Paperclip play nice with CouchDB via CouchRest::Mo
 This Readme and project is a Copy of `Mongoid::Paperclip` but it works for CouchDb using CouchRest_Model
 Original GEM: https://github.com/meskyanichi/mongoid-paperclip
 
+
 As the title suggests: `CouchRest::Paperclip` makes it easy to hook up [Paperclip](https://github.com/thoughtbot/paperclip) with [Mongoid](http://mongoid.org/).
 
 This is actually easier and faster to set up than when using Paperclip and the ActiveRecord ORM.
@@ -19,7 +20,7 @@ Simply define the `couchrest-paperclip` gem inside your `Gemfile`. Additionally,
 
 **Rails.root/Gemfile - Just define the following:**
 
-    gem "couchrest-paperclip", :require => "couchrest_paperclip"
+    gem "couchrest-paperclip", :require => "couchrest_paperclip", :git => 'git://github.com/mark-ellul/couchrest-paperclip.git'
     gem "aws-s3",            :require => "aws/s3"
     
 Next let's assume we have a User model and we want to allow our users to upload an avatar.
